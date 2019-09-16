@@ -17,5 +17,5 @@ spec:
     spec:
       containers:
         - name: app
-          image: danisla/example-app:centos
+          image: mpenelissen/example-app:centos
           imagePullPolicy: IfNotPresent

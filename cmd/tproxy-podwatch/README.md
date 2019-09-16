@@ -20,9 +20,9 @@ Configure the dev pod:
 
 ```
 pod=$(kubectl get pod --selector=run=tproxy-podwatch -o jsonpath='{.items..metadata.name}')
-kubectl exec -it ${pod} -- mkdir -p /go/src/github.com/danisla/tproxy-podwatch/
-kubectl cp main.go ${pod}:/go/src/github.com/danisla/tproxy-podwatch/main.go
-kubectl exec -it ${pod} -- sh -c 'cd /go/src/github.com/danisla/tproxy-podwatch/ && go get ./...'
+kubectl exec -it ${pod} -- mkdir -p /go/src/github.com/MatsNL/tproxy-podwatch/
+kubectl cp main.go ${pod}:/go/src/github.com/MatsNL/tproxy-podwatch/main.go
+kubectl exec -it ${pod} -- sh -c 'cd /go/src/github.com/MatsNL/tproxy-podwatch/ && go get ./...'
 ```
 
 Run the controller:

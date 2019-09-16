@@ -15,5 +15,5 @@ spec:
     spec:
       containers:
         - name: app
-          image: danisla/example-app:debian
+          image: mpenelissen/example-app:debian
           imagePullPolicy: IfNotPresent

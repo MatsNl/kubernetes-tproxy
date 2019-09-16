@@ -6,8 +6,8 @@ appVersion: 2.0.2
 home: https://mitmproxy.org
 sources:
 - https://github.com/mitmproxy/mitmproxy
-- https://github.com/danisla/kubernetes-tproxy
+- https://github.com/MatsNL/kubernetes-tproxy
 icon: https://secure.gravatar.com/avatar/eed3539f6ce40c5b398509995daf6555.jpg?s=512&r=g&d=mm
-maintainers:
-- name: danisla
-  email: disla@google.com
+#maintainers:
+#- name: MatsNL
+#  email: 

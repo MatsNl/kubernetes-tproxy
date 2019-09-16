@@ -18,7 +18,7 @@ spec:
     spec:
       initContainers:
         - name: tproxy
-          image: danisla/tproxy-sidecar:0.1.0
+          image: mpenelissen/tproxy-sidecar:0.1.0
           imagePullPolicy: IfNotPresent
           securityContext:
             privileged: true
@@ -31,7 +31,7 @@ spec:
               memory: 64Mi
       containers:
         - name: app
-          image: danisla/example-app:debian
+          image: mpenelissen/example-app:debian
           imagePullPolicy: Always
           volumeMounts:
             - name: ca-certs-debian

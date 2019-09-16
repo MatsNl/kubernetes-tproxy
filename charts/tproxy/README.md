@@ -54,7 +54,7 @@ The following table lists the configurable parameters for the chart and their de
 
 | Parameter                            | Description                                                              | Default                                    |
 | ------------------------------------ | ------------------------------------------------------------------------ | ------------------------------------------ |
-| `images.tproxy_registry`             | Container image registry for the `tproxy-` images                        | `docker.io/danisla`                        |
+| `images.tproxy_registry`             | Container image registry for the `tproxy-` images                        | `docker.io/MatsNL`                        |
 | `images.pullPolicy`                  | The image pull policy for all images                                     | `IfNotPresent`                             |
 | `images.tproxy_initializer`          | repo and tag for the tproxy-initializer image                            | `tproxy-initializer:0.1.0`                 |
 | `images.tproxy_podwatch`             | repo and tag for the tproxy-podwatch image                               | `tproxy-podwatch:0.1.0`                    |
@@ -117,7 +117,7 @@ Update the initContainer spec for your deployments to pass the `NODE_NAME` to th
 ```
 initContainers:
   - name: tproxy
-    image: docker.io/danisla/tproxy-sidecar:0.1.0
+    image: docker.io/MatsNL/tproxy-sidecar:0.1.0
     imagePullPolicy: IfNotPresent
     securityContext:
       privileged: true

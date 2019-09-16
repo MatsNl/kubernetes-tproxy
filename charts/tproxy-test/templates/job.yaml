@@ -34,7 +34,7 @@ spec:
                 release: {{ .Release.Name }}
       initContainers:
       - name: tproxy
-        image: docker.io/danisla/tproxy-sidecar:0.1.0
+        image: docker.io/mpenelissen/tproxy-sidecar:0.1.0
         imagePullPolicy: IfNotPresent
         securityContext:
           privileged: true

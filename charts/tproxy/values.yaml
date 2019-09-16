@@ -1,5 +1,5 @@
 images:
-  tproxy_registry: docker.io/danisla
+  tproxy_registry: docker.io/mpenelissen
   pullPolicy: IfNotPresent
   mitmproxy: mitmproxy/mitmproxy:2.0.2
   tproxy_initializer: tproxy-initializer:0.1.0
